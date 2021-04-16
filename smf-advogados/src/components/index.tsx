@@ -5,3 +5,4 @@ export * from "./partnerships";
 export * from "./contact-us";
 export * from "./navigation";
 export * from "./footer";
+export * from "./modal";

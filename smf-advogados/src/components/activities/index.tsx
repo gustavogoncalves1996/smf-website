@@ -11,9 +11,11 @@ import {
   ActivityText,
 } from "./styles";
 import { getTranslation } from "../../helpers";
+import { ModalType } from "../../App";
 
 interface Props {
   language: string;
+  setModal: (modal: ModalType) => void;
 }
 
 const getImageStyle = (src: string): React.CSSProperties => ({
@@ -22,7 +24,16 @@ const getImageStyle = (src: string): React.CSSProperties => ({
 
 export const ActivitiesComponent: React.FunctionComponent<Props> = ({
   language,
+  setModal,
 }) => {
+  const onClickActivity = (title: string, text: string) => {
+    setModal({
+      open: true,
+      title,
+      text,
+    });
+  };
+
   return (
     <Container id="practice_areas">
       <LeftArea>
@@ -32,7 +43,11 @@ export const ActivitiesComponent: React.FunctionComponent<Props> = ({
         </Subtitle>
       </LeftArea>
       <ActivitiesArea>
-        <Activity>
+        <Activity
+          onClick={(): void =>
+            onClickActivity("practice_areas_1", "practice_areas_1_text")
+          }
+        >
           <Image
             style={getImageStyle(
               "https://golookup-live.s3.amazonaws.com/articles/P2fZyHqYBgZGMa3MBjAMg1fm31v52wfUF0whIps9.jpeg"
@@ -72,7 +87,11 @@ export const ActivitiesComponent: React.FunctionComponent<Props> = ({
             {getTranslation("practice_areas_4", language)}
           </ActivityText>
         </Activity>
-        <Activity>
+        <Activity
+          onClick={(): void =>
+            onClickActivity("practice_areas_5", "practice_areas_5_text")
+          }
+        >
           <Image
             style={getImageStyle(
               "https://media.glassdoor.com/l/01/2e/63/1a/our-people-working-to-realise-our-vision.jpg"

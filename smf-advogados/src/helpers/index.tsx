@@ -330,6 +330,20 @@ const translations = [
       },
     ],
   },
+  // TODO: DEFINE THE FOLLOWING TEXTS
+  {
+    key: "practice_areas_1_text",
+    language: [
+      {
+        language: "pt",
+        value: "Civil Declarativo e Executivo texto corrido a definir....",
+      },
+      {
+        language: "en",
+        value: "Civil Law  texto corrido a definir.....",
+      },
+    ],
+  },
   {
     key: "practice_areas_2",
     language: [
@@ -379,6 +393,21 @@ const translations = [
       {
         language: "en",
         value: "Labor and Social Security",
+      },
+    ],
+  },
+  {
+    key: "practice_areas_5_text",
+    language: [
+      {
+        language: "pt",
+        value:
+          "Com foco na globalização e na mobilidade profissional, o departamento de Direito Laboral e da Segurança Social presta aconselhamento jurídico e de assessoria especializada permanente, individualizada, preventiva e reativa, tanto a empresas como a particulares nas mais variadas vertentes deste ramo do Direito, independentemente do sector de atividade.\nSomos consultados para análise das relações laborais e do contencioso laboral, seja ele administrativo ou judicial, porque cada vez mais se considera importante a sua intervenção.\nDesignadamente, prestando serviços de assessoria para formalização dos contratos, desde a sua elaboração até ao momento da sua celebração, adequando o seu conteúdo ao funcionamento e estrutura de cada empresa e, sempre que necessário, ao trabalhador. Neste sentido, temos constante e permanentemente em consideração as condições de trabalho, a remuneração, o horário de trabalho, a mobilidade funcional e geográfica.\nNeste contexto, prestamos aconselhamento jurídico e mediação de conflitos laborais, nomeadamente em caso de greve, de cessação de contrato de trabalho individual ou coletivo, e ainda na negociação e lay off.\nO departamento patrocina empresas e trabalhadores no âmbito da Segurança Social, designadamente na impugnação de contra-ordenações, bem como na prestação e aconselhamento de subsídios e bonificação à contratação.\nCientes da importância do cumprimento de obrigações e da regularização das empresas e seus trabalhadores, prestamos acompanhamento quer em ações inspetivas da Autoridade de Condições para o Trabalho, quer em situações de Acidentes de Trabalho, quer em contencioso contra-ordenacional da Segurança Social e Laboral.\nAliás, o nosso departamento consciente de que, muitas vezes, o esforço da empresa e dos trabalhadores é insuficiente para colmatar e combater as diferentes dinâmicas empresariais, como os riscos e contingências dos mercados, acuta preventiva e proactivamente, através de planos estratégicos que podem culminar em fusões, reestruturações, cessões de posição contratual, subcontratação, outsourcing ou até em pedidos de insolvência.\nO nosso departamento atua também na área de Direito do Emprego Público, muito embora ao longo dos últimos anos tenham surgido mutações com vista a aproximar este ramo ao ramo do Direito do Trabalho em Geral. Contudo, diferenças subsistem que implicam especialização, pela via académica, e conhecimentos profundos, pelo interesse por esta área, de que somos possuidores na aplicação do seu regime, através do patrocínio de clientes quer na resolução de litígios extra-judiciais daí emergentes, quer dos que, eventualmente, surjam pela via judicial.",
+      },
+      {
+        language: "en",
+        value:
+          "Focused on globalization and professional mobility, the Labor and Social Security  department provides permanent, individualized, preventive, reactive and specialized legal advice, to both companies and individuals in the most varied aspects of this branch of Law, regardless of activity sector.\nWe are consulted for the analysis of labor relations and labor litigation, be it administrative or judicial, because its intervention is increasingly considered important.\nIn particular, providing advisory services for the formalization of contracts, from their preparation to the moment of their conclusion, adapting their content to the functioning and structure of each company and, whenever necessary, to the worker. In this sense, we constantly and permanently take into account working conditions, payment, working hours, functional and geographical mobility.\nIn this context, we provide legal advice and mediation of labor disputes, particularly in the event of a strike, termination of individual or collective employment contract, and also in negotiation and lay off.\nThis department sponsors companies and workers within the scope of Social Security, namely in the challenge of administrative offenses, as well as in the provision and advice of subsidies and bonus for hiring.\nAware of the importance of complying with obligations and regularizing companies and their workers, we provide follow-up both in inspecting actions by the Working Conditions Authority, in situations of Accidents at Work, and in administrative and social security litigation.\nIn fact, our department is aware that, many times, the effort of the company and workers is insufficient to fill and fight the different business dynamics, such as the risks and contingencies of the markets, acts preventively and proactively, through strategic plans that can culminate in mergers, restructurings, assignments of contractual positions, subcontracting, outsourcing or even insolvency claims.\nOur department also operates in the area of ​​Public Employment Law, although over the past few years there have been changes in order to bring this branch closer to the branch of Labor Law in General. However, differences remain that imply specialization, through the academic field, and deep knowledge, due to the interest in this area, that we are possessors in the application of its regime, through the sponsorship of clients, as well as in the resolution of extra-judicial disputes arising from that, either from that eventually arise through the judicial system.",
       },
     ],
   },
