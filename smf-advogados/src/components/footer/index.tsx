@@ -48,24 +48,34 @@ export const FooterComponent: React.FunctionComponent<Props> = ({
         <FooterMenu>
           <OptionWrapper>
             <Option>
-              {getTranslation("about_us", language)} <Arrow />
+              <a href="#about_us">{getTranslation("about_us", language)}</a>
+              <Arrow />
             </Option>
             <Option>
-              {getTranslation("our_team", language)} <Arrow />
+              <a href="#our_team">{getTranslation("our_team", language)}</a>
+              <Arrow />
             </Option>
             <Option>
-              {getTranslation("practice_areas", language)} <Arrow />
+              <a href="#practice_areas">
+                {getTranslation("practice_areas", language)}
+              </a>
+              <Arrow />
             </Option>
           </OptionWrapper>
           <OptionWrapper>
             <Option>
-              {getTranslation("partnerships", language)} <Arrow />
+              <a href="#partnerships">
+                {getTranslation("partnerships", language)}
+              </a>
+              <Arrow />
             </Option>
             <Option>
-              {getTranslation("news", language)} <Arrow />
+              <a href="#news">{getTranslation("news", language)}</a>
+              <Arrow />
             </Option>
             <Option>
-              {getTranslation("contacts", language)} <Arrow />
+              <a href="#contacts">{getTranslation("contacts", language)}</a>
+              <Arrow />
             </Option>
           </OptionWrapper>
         </FooterMenu>

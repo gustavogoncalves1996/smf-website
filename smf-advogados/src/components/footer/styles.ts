@@ -98,6 +98,11 @@ export const Option = styled.div`
     fill: rgb(247, 249, 252);
   }
 
+  > a {
+    text-decoration: none;
+    color: rgb(247, 249, 252);
+  }
+
   &:hover {
     svg {
       opacity: 1;
