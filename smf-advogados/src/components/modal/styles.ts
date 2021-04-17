@@ -24,46 +24,11 @@ export const InnerContainer = styled.div`
   background-color: #fff;
   transform: rotate(32deg);
   transition: 0.64s ease-in-out;
-`;
 
-export const ImageContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20%;
-  height: 100%;
-  overflow: hidden;
-  padding-right: 20rem;
-
-  > img {
-    width: auto;
+  @media (max-width: 767px) {
+    width: 100%;
     height: 100%;
   }
-`;
-
-export const TextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  height: 100%;
-  padding: 4rem;
-  cursor: default;
-`;
-
-export const Title = styled.div`
-  color: #784b4a;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-`;
-
-export const Description = styled.div`
-  white-space: pre-line;
-  text-align: justify;
-  font-size: 1.2rem;
-  color: #686868;
-  line-height: 2rem;
 `;
 
 export const Close = styled.a`
@@ -82,4 +47,81 @@ export const Close = styled.a`
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+  transition: all 0.4s;
+
+  @media (max-width: 767px) {
+    border-radius: 1rem;
+    top: 2rem;
+    right: 2rem;
+  }
+`;
+
+export const ImageContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+  overflow: hidden;
+  padding-right: 20rem;
+  transition: all 0.4s;
+
+  @media (min-width: 768px) and (max-width: 1000px) {
+    display: none;
+    width: 0%;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+    width: 0%;
+  }
+
+  > img {
+    width: auto;
+    height: 100%;
+  }
+`;
+
+export const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  padding: 4rem;
+  cursor: default;
+  transition: all 0.4s;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+`;
+
+export const Title = styled.div`
+  color: #784b4a;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+`;
+
+export const DescriptionsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+`;
+
+export const Description = styled.div`
+  white-space: pre-line;
+  text-align: justify;
+  font-size: 1.2rem;
+  color: #686868;
+  line-height: 2rem;
+  margin-bottom: 8px;
+`;
+
+export const TeamMembers = styled.div`
+  display: flex;
+  height: 24rem;
+  background-color: pink;
+  margin-top: auto;
 `;

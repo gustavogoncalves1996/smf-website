@@ -13,7 +13,7 @@ export const AppContainer = styled.div`
   ${flexBox}
 `;
 
-export const GlobalStyle = createGlobalStyle`
+export const getGlobalStyle = (isModalOpen: boolean) => createGlobalStyle`
 	*,
 	*::after,
 	*::before {
@@ -41,8 +41,6 @@ export const GlobalStyle = createGlobalStyle`
 			font-size: 75%; //1rem = 12, 12/16
 		}
 
-		
-
 		*::-webkit-scrollbar-track {
 			-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 			border-radius: 10px;
@@ -50,7 +48,7 @@ export const GlobalStyle = createGlobalStyle`
 		  }
 	  
 		  *::-webkit-scrollbar {
-			width: 12px;
+			width: 8px;
 			background-color: #f5f5f5;
 		  }
 	  
@@ -69,6 +67,7 @@ export const GlobalStyle = createGlobalStyle`
 		font-weight: 400;
 		line-height: 1.7;
 		overflow-x: hidden !important;
+		overflow-y: ${isModalOpen ? "hidden" : "auto"};
 
 		@include respond(tab-port) {
 			padding: 0;

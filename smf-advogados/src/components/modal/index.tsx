@@ -6,7 +6,9 @@ import {
   ImageContainer,
   TextContainer,
   Title,
+  DescriptionsContainer,
   Description,
+  TeamMembers,
   Close,
 } from "./styles";
 import { getTranslation } from "../../helpers";
@@ -53,9 +55,12 @@ export const ModalComponent: React.FunctionComponent<Props> = ({
         </ImageContainer>
         <TextContainer>
           <Title>{getTranslation(title, language)}</Title>
-          {text.map((simpleText) => (
-            <Description>{getTranslation(simpleText, language)}</Description>
-          ))}
+          <DescriptionsContainer>
+            {text.map((simpleText) => (
+              <Description>{getTranslation(simpleText, language)}</Description>
+            ))}
+          </DescriptionsContainer>
+          <TeamMembers></TeamMembers>
         </TextContainer>
       </InnerContainer>
     </Container>

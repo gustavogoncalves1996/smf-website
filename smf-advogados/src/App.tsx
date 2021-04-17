@@ -1,6 +1,6 @@
 import React from "react";
 
-import { AppContainer, GlobalStyle } from "./App.styles";
+import { AppContainer, getGlobalStyle } from "./App.styles";
 import {
   HeaderComponent,
   BodyComponent,
@@ -24,6 +24,8 @@ const App: React.FunctionComponent<{}> = () => {
     title: "",
     text: [""],
   });
+
+  const GlobalStyle = getGlobalStyle(modal.open);
 
   return (
     <AppContainer>
