@@ -10,7 +10,7 @@ export const Container = styled.div`
   bottom: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 999;
+  z-index: 1001;
   overflow: hiden;
   transition: 0.64s ease-in-out;
 `;
@@ -19,8 +19,6 @@ export const InnerContainer = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  max-width: 1000px;
-  max-height: 600px;
   width: 80%;
   height: 80%;
   background-color: #fff;

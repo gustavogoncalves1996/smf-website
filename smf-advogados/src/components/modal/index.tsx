@@ -27,7 +27,7 @@ export const ModalComponent: React.FunctionComponent<Props> = ({
     setModal({
       open: false,
       title: "",
-      text: "",
+      text: [""],
     });
 
   const { open, title, text } = modal;
@@ -53,7 +53,9 @@ export const ModalComponent: React.FunctionComponent<Props> = ({
         </ImageContainer>
         <TextContainer>
           <Title>{getTranslation(title, language)}</Title>
-          <Description>{getTranslation(text, language)}</Description>
+          {text.map((simpleText) => (
+            <Description>{getTranslation(simpleText, language)}</Description>
+          ))}
         </TextContainer>
       </InnerContainer>
     </Container>

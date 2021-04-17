@@ -14,7 +14,7 @@ const DEFAULT_LANGUAGE = "en";
 export interface ModalType {
   open: boolean;
   title: string;
-  text: string;
+  text: string[];
 }
 
 const App: React.FunctionComponent<{}> = () => {
@@ -22,7 +22,7 @@ const App: React.FunctionComponent<{}> = () => {
   const [modal, setModal] = React.useState({
     open: false,
     title: "",
-    text: "",
+    text: [""],
   });
 
   return (
