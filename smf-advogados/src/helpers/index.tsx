@@ -91,21 +91,6 @@ const translations = [
     ],
   },
   {
-    key: "practice_areas_subtitle",
-    language: [
-      {
-        language: "pt",
-        value:
-          "A Simões, Morais & Farinha dispõe de pessoas vocacionadas para cada área do direito em que atua.",
-      },
-      {
-        language: "en",
-        value:
-          "Simões, Morais & Farinha has people dedicated to each area of ​​law in which it operates.",
-      },
-    ],
-  },
-  {
     key: "partnerships",
     language: [
       {

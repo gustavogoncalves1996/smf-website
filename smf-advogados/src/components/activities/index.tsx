@@ -2,9 +2,7 @@ import React from "react";
 
 import {
   Container,
-  LeftArea,
   Title,
-  Subtitle,
   ActivitiesArea,
   Activity,
   Image,
@@ -57,12 +55,7 @@ export const ActivitiesComponent: React.FunctionComponent<Props> = ({
 
   return (
     <Container id="practice_areas">
-      <LeftArea>
-        <Title>{getTranslation("practice_areas_title", language)}</Title>
-        <Subtitle>
-          {getTranslation("practice_areas_subtitle", language)}
-        </Subtitle>
-      </LeftArea>
+      <Title>{getTranslation("practice_areas_title", language)}</Title>
       <ActivitiesArea>
         <Activity
           onClick={(): void => onClickActivity("practice_areas_1", area1)}

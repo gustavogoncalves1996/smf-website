@@ -108,6 +108,9 @@ export const DescriptionsContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
 `;
 
 export const Description = styled.div`

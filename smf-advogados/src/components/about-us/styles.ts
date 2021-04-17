@@ -3,15 +3,10 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  transform: skewY(-4deg);
-  padding: 8rem 0 14rem;
+  padding: 8rem 0 4rem;
 
   @media (max-width: 767px) {
     padding: 6rem 0 2rem;
-  }
-
-  > div {
-    transform: skewY(4deg);
   }
 `;
 

@@ -6,6 +6,11 @@ export const Container = styled.div`
   padding: 8rem 0 14rem;
   position: relative;
   background: rgb(247, 249, 252);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(https://dl.wotor.net/_com/zenoimpex.com/images/demo/666.jpg);
 
   @media (max-width: 767px) {
     padding: 4rem 0 10rem;

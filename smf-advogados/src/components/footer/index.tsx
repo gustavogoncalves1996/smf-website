@@ -74,7 +74,7 @@ export const FooterComponent: React.FunctionComponent<Props> = ({
               <Arrow />
             </Option>
             <Option>
-              <a href="#contacts">{getTranslation("contacts", language)}</a>
+              <a href="#contact_us">{getTranslation("contacts", language)}</a>
               <Arrow />
             </Option>
           </OptionWrapper>

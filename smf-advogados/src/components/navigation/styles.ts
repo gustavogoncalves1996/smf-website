@@ -10,7 +10,7 @@ export const Navigation = styled.div`
   top: 0px;
   display: flex;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.55);
+  transition: ease-out 0.6s;
 
   @media (max-width: 767px) {
     height: 12rem;
