@@ -64,6 +64,11 @@ export const leaders = [
     experience: [
       {
         pt:
+          "Curso de contabilidade jurídica, da Universidade Católica do Porto, em 1994",
+        en: "Legal accounting course, Universidade Católica do Porto, 1994",
+      },
+      {
+        pt:
           "Estágio Profissional o escritório de Advogados – Dr. Miguel Pereira de Abreu, no Porto – 1994/1996",
         en:
           "Professional Internship at the law firm – Dr. Miguel Pereira de Abreu, in Oporto – 1994/1996",
@@ -75,20 +80,9 @@ export const leaders = [
       },
       {
         pt:
-          "Advogada na sociedade Macedo & Associados – Sociedade de Advogados, no Porto nos anos de 2015 e 2016",
-        en:
-          "Lawyer at Macedo & Associados – Law Firm in Oporto in 2015 and 2016",
-      },
-      {
-        pt:
           "Colabora com escritórios de advogados em Espanha, Brasil, Luxemburgo e África do Sul.",
         en:
           "Collaborated with law firms in Spain, Brazil, Luxembourg and South Africa.",
-      },
-      {
-        pt:
-          "Curso de contabilidade jurídica, da Universidade Católica do Porto, em 1994",
-        en: "Legal accounting course, Universidade Católica do Porto, 1994",
       },
       {
         pt:
@@ -100,6 +94,12 @@ export const leaders = [
           "Curso de Direito de Trabalho da Ordem dos Advogados  – Distrital do Porto, no ano de 2007",
         en:
           "Labour Law Course of the Portuguese Bar Association – Oporto District, in 2007",
+      },
+      {
+        pt:
+          "Advogada na sociedade Macedo & Associados – Sociedade de Advogados, no Porto nos anos de 2015 e 2016",
+        en:
+          "Lawyer at Macedo & Associados – Law Firm in Oporto in 2015 and 2016",
       },
     ],
     languages: [
@@ -156,13 +156,13 @@ export const leaders = [
     ],
     experience: [
       {
+        pt: "Frequência de cursos no âmbito do Direito das contra-ordenações",
+        en: "Attendance at courses in the field of law against ordination",
+      },
+      {
         pt:
           "Advogada em regime de prática individual , com escritório próprio desde 2005",
         en: "Lawyer in individual practice, with own office since 2005",
-      },
-      {
-        pt: "Frequência de cursos no âmbito do Direito das contra-ordenações",
-        en: "Attendance at courses in the field of law against ordination",
       },
       {
         pt:
@@ -212,14 +212,14 @@ export const leaders = [
     education: [
       {
         pt:
-          "Advogado, Cédula n.º 5724P, Conselho Distrital do Porto desde 13-11-1995",
-        en: "Lawyer, Number 5724P, Oporto District Council since 13-11-1995",
-      },
-      {
-        pt:
           "Licenciado em Direito pela Universidade Católica Portuguesa – Centro Regional do Porto",
         en:
           "Law Degree from Portuguese Catholic University – Oporto Regional Center",
+      },
+      {
+        pt:
+          "Advogado, Cédula n.º 5724P, Conselho Distrital do Porto desde 13-11-1995",
+        en: "Lawyer, Number 5724P, Oporto District Council since 13-11-1995",
       },
     ],
     experience: [

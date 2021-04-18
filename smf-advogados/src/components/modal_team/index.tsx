@@ -5,15 +5,18 @@ import {
   InnerContainer,
   ImageContainer,
   TextContainer,
-  Title,
-  DescriptionsContainer,
-  Description,
-  TeamMembers,
+  TeamElement,
+  BioContainer,
+  Name,
   Close,
+  Area,
+  TitleArea,
+  AreaContent,
 } from "./styles";
-import { getTranslation } from "../../helpers";
 import { ModalTeamType } from "../../App";
 import CloseIcon from "@material-ui/icons/Close";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import EmailIcon from "@material-ui/icons/Email";
 
 interface Props {
   language: string;
@@ -31,11 +34,19 @@ export const ModalTeamComponent: React.FunctionComponent<Props> = ({
     language,
     modalTeam,
   });
+  const onClickEmail = (email: string): void => {
+    window.open(`mailto:${email}`, "_blank");
+  };
+  const onClickLinkedin = (linkedin: string): void => {
+    window.open(linkedin, "_blank");
+  };
   const closeModal = (): void =>
     setModalTeam({
       open: false,
       title: "",
       image: "",
+      linkedin: "",
+      email: "",
       areas: [{ pt: "", en: "" }],
       education: [{ pt: "", en: "" }],
       experience: [{ pt: "", en: "" }],
@@ -49,9 +60,12 @@ export const ModalTeamComponent: React.FunctionComponent<Props> = ({
     areas,
     education,
     experience,
-
+    linkedin,
     languages,
+    email,
   } = modalTeam;
+
+  // TODO: tentr perceber como vou fazer para ter em conta os idiomas para os conteudos
 
   return (
     <Container
@@ -68,21 +82,54 @@ export const ModalTeamComponent: React.FunctionComponent<Props> = ({
           <CloseIcon />
         </Close>
         <ImageContainer>
-          <img
-            src="https://qtcrecruitment.com/wp-content/uploads/2017/12/LegalLawLegislation-Concept.-Judge-gavel-on-law-books-with-scales-of-justice..jpg"
-            alt=""
-          />
+          <TeamElement>
+            <img src={image} alt="" />
+            <BioContainer>
+              <Name>{title}</Name>
+              {(linkedin || email) && (
+                <div>
+                  {linkedin && (
+                    <div onClick={(): void => onClickLinkedin(linkedin)}>
+                      <LinkedInIcon />
+                    </div>
+                  )}
+                  {email && (
+                    <div onClick={(): void => onClickEmail(email)}>
+                      <EmailIcon />
+                    </div>
+                  )}
+                </div>
+              )}
+            </BioContainer>
+          </TeamElement>
         </ImageContainer>
         <TextContainer>
+          <Area></Area>
+          <Area></Area>
+          <Area></Area>
+          <Area>
+            <TitleArea></TitleArea>
+            <AreaContent>
+              <ul>
+                {languages.map((lang) => {
+                  // return <li>{lang[language]}</li>;
+                })}
+
+                <li></li>
+              </ul>
+            </AreaContent>
+          </Area>
+        </TextContainer>
+        {/* <TextContainer>
           <Title>{title}</Title>
           <DescriptionsContainer>
-            {/* {text.map((simpleText) => (
+            {text.map((simpleText) => (
               <Description>{getTranslation(simpleText, language)}</Description>
-            ))} */}
+            ))}
             Description to changeeeeeeeeeeeeeeeeeee
           </DescriptionsContainer>
           <TeamMembers></TeamMembers>
-        </TextContainer>
+        </TextContainer> */}
       </InnerContainer>
     </Container>
   );

@@ -61,28 +61,84 @@ export const Close = styled.a`
 
 export const ImageContainer = styled.div`
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 32rem;
+  height: 100%;
+  background-color: var(--color-primary-900, rgba(120, 75, 74, 0.9));
+`;
+
+export const TeamElement = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 35rem;
+  padding: 2rem;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+`;
+
+export const BioContainer = styled.div`
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 20%;
-  height: 100%;
-  overflow: hidden;
-  padding-right: 20rem;
-  transition: all 0.4s;
+  flex-direction: column;
+  background: var(--surface-color, rgb(255, 255, 255));
+  margin: -3rem auto 0;
+  width: 80%;
+  padding: 0.5rem;
+  box-shadow: 0 1.5rem 4rem var(--box-shadow-primary-color, rgba(0, 0, 0, 0.15));
+  border-radius: 0.5rem;
+  height: 12rem;
 
-  @media (min-width: 768px) and (max-width: 1000px) {
-    display: none;
-    width: 0%;
-  }
+  > div {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
 
-  @media (max-width: 767px) {
-    display: none;
-    width: 0%;
-  }
+    > div {
+      cursor: pointer;
 
-  > img {
-    width: auto;
-    height: 100%;
+      > svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: var(--color-primary-600, rgba(120, 75, 74, 0.6));
+      }
+    }
   }
+`;
+
+export const Name = styled.div`
+  cursor: default;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: var(--text-primary-title-color, rgb(51, 51, 51));
+  font-weight: 700;
+  font-family: Oswald, sans-serif;
+  letter-spacing: 2px;
+`;
+
+export const Job = styled.div`
+  cursor: default;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 1rem auto 0;
+  color: var(--color-primary, rgb(120, 75, 74));
 `;
 
 export const TextContainer = styled.div`
@@ -97,37 +153,20 @@ export const TextContainer = styled.div`
   @media (max-width: 767px) {
     width: 100%;
   }
+
+  > div:first-of-type {
+    border-top: none;
+    padding: 0;
+  }
 `;
 
-export const Title = styled.div`
-  color: var(--color-primary, rgb(120, 75, 74));
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-`;
-
-export const DescriptionsContainer = styled.div`
+export const Area = styled.div`
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  overflow-y: auto;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
+  flex-direction: row;
+  border-top: 1mm dotted black;
+  padding: 4mm 0 0 0;
 `;
 
-export const Description = styled.div`
-  white-space: pre-line;
-  text-align: justify;
-  font-size: 1.2rem;
-  color: var(--text-primary-text-color, rgb(102, 102, 102));
-  line-height: 2rem;
-  margin-bottom: 8px;
-`;
+export const AreaContent = styled.div``;
 
-export const TeamMembers = styled.div`
-  display: flex;
-  height: 24rem;
-  background-color: pink;
-  margin-top: auto;
-`;
+export const TitleArea = styled.div``;

@@ -54,7 +54,7 @@ export const BioContainer = styled.div`
   box-shadow: 0 1.5rem 4rem var(--box-shadow-primary-color, rgba(0, 0, 0, 0.15));
   border-radius: 0.5rem;
 
-  > div {
+  > :not(div:last-of-type) {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
@@ -101,4 +101,33 @@ export const Job = styled.div`
   font-size: 1.5rem;
   margin: 1rem auto 0;
   color: var(--color-primary, rgb(120, 75, 74));
+`;
+
+export const MoreContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 2rem;
+`;
+
+export const ReadMore = styled.div`
+  margin-left: auto;
+  font-size: 1.6rem;
+  color: var(--color-primary-600, rgba(120, 75, 74, 0.6));
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-primary-600, rgba(120, 75, 74, 0.6));
+  padding: 3px;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-primary-600, rgba(120, 75, 74, 0.6));
+    color: var(--text-secondary-color, rgb(255, 255, 255));
+    box-shadow: 0 1rem 2rem var(--surface-color-100, rgba(255, 255, 255, 0.1));
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem var(--surface-color-100, rgba(255, 255, 255, 0.1));
+  }
 `;

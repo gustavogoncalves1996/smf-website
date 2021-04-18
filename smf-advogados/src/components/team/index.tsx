@@ -8,6 +8,8 @@ import {
   BioContainer,
   Name,
   Job,
+  MoreContainer,
+  ReadMore,
 } from "./styles";
 import { getTranslation } from "../../helpers";
 import { leaders, team, interns, administrative } from "./helpers";
@@ -44,6 +46,8 @@ export const TeamComponent: React.FunctionComponent<Props> = ({
     setModalTeam({
       open: true,
       title: element.name,
+      linkedin: element.linkedin,
+      email: element.email,
       image: element.image,
       areas: element.areas,
       education: element.education,
@@ -51,8 +55,6 @@ export const TeamComponent: React.FunctionComponent<Props> = ({
       languages: element.languages,
     });
   };
-
-  // TODO: CHANGE THE ON CLICK FUNCTION TO ANOTHER PLACE (BUTTON)
 
   return (
     <Container>
@@ -80,6 +82,11 @@ export const TeamComponent: React.FunctionComponent<Props> = ({
                     )}
                   </div>
                 )}
+                <MoreContainer>
+                  <ReadMore onClick={(): void => onClickElement(leader)}>
+                    {getTranslation("read_more", language)} →
+                  </ReadMore>
+                </MoreContainer>
               </BioContainer>
             </TeamElement>
           );
@@ -87,7 +94,7 @@ export const TeamComponent: React.FunctionComponent<Props> = ({
       </TeamContainer>
       <TeamContainer>
         {team.map((person) => (
-          <TeamElement onClick={(): void => onClickElement(person)}>
+          <TeamElement>
             <img src={person.image || defaultImage(person.genre)} alt="" />
             <BioContainer>
               <Name>{person.name}</Name>
@@ -105,13 +112,18 @@ export const TeamComponent: React.FunctionComponent<Props> = ({
                   )}
                 </div>
               )}
+              <MoreContainer>
+                <ReadMore onClick={(): void => onClickElement(person)}>
+                  {getTranslation("read_more", language)} →
+                </ReadMore>
+              </MoreContainer>
             </BioContainer>
           </TeamElement>
         ))}
       </TeamContainer>
       <TeamContainer>
         {interns.map((person) => (
-          <TeamElement onClick={(): void => onClickElement(person)}>
+          <TeamElement>
             <img src={person.image || defaultImage(person.genre)} alt="" />
             <BioContainer>
               <Name>{person.name}</Name>
@@ -132,13 +144,18 @@ export const TeamComponent: React.FunctionComponent<Props> = ({
                   )}
                 </div>
               )}
+              <MoreContainer>
+                <ReadMore onClick={(): void => onClickElement(person)}>
+                  {getTranslation("read_more", language)} →
+                </ReadMore>
+              </MoreContainer>
             </BioContainer>
           </TeamElement>
         ))}
       </TeamContainer>
       <TeamContainer>
         {administrative.map((person) => (
-          <TeamElement onClick={(): void => onClickElement(person)}>
+          <TeamElement>
             <img src={person.image || defaultImage(person.genre)} alt="" />
             <BioContainer>
               <Name>{person.name}</Name>
@@ -159,6 +176,11 @@ export const TeamComponent: React.FunctionComponent<Props> = ({
                   )}
                 </div>
               )}
+              <MoreContainer>
+                <ReadMore onClick={(): void => onClickElement(person)}>
+                  {getTranslation("read_more", language)} →
+                </ReadMore>
+              </MoreContainer>
             </BioContainer>
           </TeamElement>
         ))}

@@ -27,6 +27,8 @@ export interface ModalTeamType {
   open: boolean;
   title: string;
   image: string;
+  linkedin: string;
+  email: string;
   areas: ModalContent[];
   education: ModalContent[];
   experience: ModalContent[];
@@ -159,6 +161,8 @@ const App: React.FunctionComponent<{}> = () => {
     open: false,
     title: "",
     image: "",
+    linkedin: "",
+    email: "",
     areas: [{ pt: "", en: "" }],
     education: [{ pt: "", en: "" }],
     experience: [{ pt: "", en: "" }],
