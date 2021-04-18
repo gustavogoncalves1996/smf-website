@@ -7,6 +7,7 @@ import {
   NavigationComponent,
   FooterComponent,
   ModalComponent,
+  ModalTeamComponent,
 } from "./components";
 
 const DEFAULT_LANGUAGE = "en";
@@ -15,6 +16,21 @@ export interface ModalType {
   open: boolean;
   title: string;
   text: string[];
+}
+
+export interface ModalContent {
+  pt: string;
+  en: string;
+}
+
+export interface ModalTeamType {
+  open: boolean;
+  title: string;
+  image: string;
+  areas: ModalContent[];
+  education: ModalContent[];
+  experience: ModalContent[];
+  languages: ModalContent[];
 }
 
 const globalColors = [
@@ -139,6 +155,15 @@ const App: React.FunctionComponent<{}> = () => {
     title: "",
     text: [""],
   });
+  const [modalTeam, setModalTeam] = React.useState({
+    open: false,
+    title: "",
+    image: "",
+    areas: [{ pt: "", en: "" }],
+    education: [{ pt: "", en: "" }],
+    experience: [{ pt: "", en: "" }],
+    languages: [{ pt: "", en: "" }],
+  });
 
   const GlobalStyle = getGlobalStyle(modal.open, globalColors);
 
@@ -146,9 +171,18 @@ const App: React.FunctionComponent<{}> = () => {
     <AppContainer>
       <GlobalStyle />
       <ModalComponent language={language} modal={modal} setModal={setModal} />
+      <ModalTeamComponent
+        language={language}
+        modalTeam={modalTeam}
+        setModalTeam={setModalTeam}
+      />
       <NavigationComponent language={language} setLanguage={setLanguage} />
       <HeaderComponent />
-      <BodyComponent language={language} setModal={setModal} />
+      <BodyComponent
+        language={language}
+        setModal={setModal}
+        setModalTeam={setModalTeam}
+      />
       <FooterComponent language={language} />
     </AppContainer>
   );

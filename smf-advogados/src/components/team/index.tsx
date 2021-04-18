@@ -14,12 +14,17 @@ import { leaders, team, interns, administrative } from "./helpers";
 
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
+import { ModalTeamType } from "../../App";
 
 interface Props {
   language: string;
+  setModalTeam: (modal: ModalTeamType) => void;
 }
 
-export const TeamComponent: React.FunctionComponent<Props> = ({ language }) => {
+export const TeamComponent: React.FunctionComponent<Props> = ({
+  language,
+  setModalTeam,
+}) => {
   const onClickEmail = (email: string): void => {
     window.open(`mailto:${email}`, "_blank");
   };
@@ -35,13 +40,27 @@ export const TeamComponent: React.FunctionComponent<Props> = ({ language }) => {
     return "https://cdn.nohat.cc/thumb/f/720/comvecteezy356502.jpg";
   };
 
+  const onClickElement = (element: any): void => {
+    setModalTeam({
+      open: true,
+      title: element.name,
+      image: element.image,
+      areas: element.areas,
+      education: element.education,
+      experience: element.experience,
+      languages: element.languages,
+    });
+  };
+
+  // TODO: CHANGE THE ON CLICK FUNCTION TO ANOTHER PLACE (BUTTON)
+
   return (
     <Container>
       <Title>{getTranslation("our_team", language)}</Title>
       <TeamContainer>
         {leaders.map((leader) => {
           return (
-            <TeamElement>
+            <TeamElement onClick={(): void => onClickElement(leader)}>
               <img src={leader.image} alt="" />
               <BioContainer>
                 <Name>{leader.name}</Name>
@@ -68,7 +87,7 @@ export const TeamComponent: React.FunctionComponent<Props> = ({ language }) => {
       </TeamContainer>
       <TeamContainer>
         {team.map((person) => (
-          <TeamElement>
+          <TeamElement onClick={(): void => onClickElement(person)}>
             <img src={person.image || defaultImage(person.genre)} alt="" />
             <BioContainer>
               <Name>{person.name}</Name>
@@ -92,7 +111,7 @@ export const TeamComponent: React.FunctionComponent<Props> = ({ language }) => {
       </TeamContainer>
       <TeamContainer>
         {interns.map((person) => (
-          <TeamElement>
+          <TeamElement onClick={(): void => onClickElement(person)}>
             <img src={person.image || defaultImage(person.genre)} alt="" />
             <BioContainer>
               <Name>{person.name}</Name>
@@ -119,7 +138,7 @@ export const TeamComponent: React.FunctionComponent<Props> = ({ language }) => {
       </TeamContainer>
       <TeamContainer>
         {administrative.map((person) => (
-          <TeamElement>
+          <TeamElement onClick={(): void => onClickElement(person)}>
             <img src={person.image || defaultImage(person.genre)} alt="" />
             <BioContainer>
               <Name>{person.name}</Name>

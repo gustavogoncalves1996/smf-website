@@ -12,28 +12,46 @@ import {
   Close,
 } from "./styles";
 import { getTranslation } from "../../helpers";
-import { ModalType } from "../../App";
+import { ModalTeamType } from "../../App";
 import CloseIcon from "@material-ui/icons/Close";
 
 interface Props {
   language: string;
-  modal: ModalType;
-  setModal: (modal: ModalType) => void;
+  modalTeam: ModalTeamType;
+  setModalTeam: (modal: ModalTeamType) => void;
 }
 
-export const ModalComponent: React.FunctionComponent<Props> = ({
+export const ModalTeamComponent: React.FunctionComponent<Props> = ({
   language,
-  modal,
-  setModal,
+  modalTeam,
+  setModalTeam,
 }) => {
+  console.log("Modal team");
+  console.log({
+    language,
+    modalTeam,
+  });
   const closeModal = (): void =>
-    setModal({
+    setModalTeam({
       open: false,
       title: "",
-      text: [""],
+      image: "",
+      areas: [{ pt: "", en: "" }],
+      education: [{ pt: "", en: "" }],
+      experience: [{ pt: "", en: "" }],
+      languages: [{ pt: "", en: "" }],
     });
 
-  const { open, title, text } = modal;
+  const {
+    open,
+    title,
+    image,
+    areas,
+    education,
+    experience,
+
+    languages,
+  } = modalTeam;
 
   return (
     <Container
@@ -56,11 +74,12 @@ export const ModalComponent: React.FunctionComponent<Props> = ({
           />
         </ImageContainer>
         <TextContainer>
-          <Title>{getTranslation(title, language)}</Title>
+          <Title>{title}</Title>
           <DescriptionsContainer>
-            {text.map((simpleText) => (
+            {/* {text.map((simpleText) => (
               <Description>{getTranslation(simpleText, language)}</Description>
-            ))}
+            ))} */}
+            Description to changeeeeeeeeeeeeeeeeeee
           </DescriptionsContainer>
           <TeamMembers></TeamMembers>
         </TextContainer>
