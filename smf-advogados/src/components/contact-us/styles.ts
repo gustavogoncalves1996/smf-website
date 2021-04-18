@@ -98,6 +98,10 @@ export const ContactInfoEntry = styled.div`
     fill: var(--color-primary-800, rgba(120, 75, 74, 0.8));
     margin-bottom: 1.5rem;
   }
+
+  > div:last-of-type {
+    margin-bottom: auto;
+  }
 `;
 
 export const ContactTitle = styled.div`

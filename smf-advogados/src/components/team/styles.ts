@@ -65,10 +65,12 @@ export const BioContainer = styled.div`
       width: 2rem;
       margin: 0px 1rem;
       cursor: pointer;
-    }
 
-    > div:last-of-type {
-      margin-top: 2px;
+      > svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: var(--color-primary-600, rgba(120, 75, 74, 0.6));
+      }
     }
   }
 `;

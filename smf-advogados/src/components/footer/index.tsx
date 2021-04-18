@@ -13,10 +13,10 @@ import {
   BottomFooterIcon,
 } from "./styles";
 import { getTranslation } from "../../helpers";
-import { ReactComponent as Instagram } from "../../assets/img/instagram.svg";
-import { ReactComponent as Linkedin } from "../../assets/img/linkedin.svg";
-import { ReactComponent as Arrow } from "../../assets/img/arrow.svg";
 import logo from "../../assets/img/logo.png";
+import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import InstagramIcon from "@material-ui/icons/Instagram";
 
 interface Props {
   language: string;
@@ -49,17 +49,17 @@ export const FooterComponent: React.FunctionComponent<Props> = ({
           <OptionWrapper>
             <Option>
               <a href="#about_us">{getTranslation("about_us", language)}</a>
-              <Arrow />
+              <ArrowRightAltIcon />
             </Option>
             <Option>
               <a href="#our_team">{getTranslation("our_team", language)}</a>
-              <Arrow />
+              <ArrowRightAltIcon />
             </Option>
             <Option>
               <a href="#practice_areas">
                 {getTranslation("practice_areas", language)}
               </a>
-              <Arrow />
+              <ArrowRightAltIcon />
             </Option>
           </OptionWrapper>
           <OptionWrapper>
@@ -67,15 +67,15 @@ export const FooterComponent: React.FunctionComponent<Props> = ({
               <a href="#partnerships">
                 {getTranslation("partnerships", language)}
               </a>
-              <Arrow />
+              <ArrowRightAltIcon />
             </Option>
             <Option>
               <a href="#news">{getTranslation("news", language)}</a>
-              <Arrow />
+              <ArrowRightAltIcon />
             </Option>
             <Option>
               <a href="#contact_us">{getTranslation("contacts", language)}</a>
-              <Arrow />
+              <ArrowRightAltIcon />
             </Option>
           </OptionWrapper>
         </FooterMenu>
@@ -86,10 +86,10 @@ export const FooterComponent: React.FunctionComponent<Props> = ({
         </BottomFooterText>
         <BottomFooterIcons>
           <BottomFooterIcon onClick={onClickInsta}>
-            <Instagram />
+            <InstagramIcon />
           </BottomFooterIcon>
           <BottomFooterIcon onClick={onClickLinkedin}>
-            <Linkedin />
+            <LinkedInIcon />
           </BottomFooterIcon>
         </BottomFooterIcons>
       </BottomFooter>

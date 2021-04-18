@@ -127,7 +127,7 @@ export const BottomFooterText = styled.div`
   align-items: center;
   justify-content: center;
   color: var(--text-secondary-color, rgb(255, 255, 255));
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   cursor: default;
   margin: 2rem 0px 0px;
 `;
@@ -143,7 +143,7 @@ export const BottomFooterIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--text-secondary-color, rgb(255, 255, 255));
+  border: 3px solid var(--text-secondary-color, rgb(255, 255, 255));
   padding: 8px;
   border-radius: 50%;
   cursor: pointer;
@@ -156,5 +156,6 @@ export const BottomFooterIcon = styled.div`
   svg {
     width: 3rem;
     height: 3rem;
+    fill: var(--text-secondary-color, rgb(255, 255, 255));
   }
 `;

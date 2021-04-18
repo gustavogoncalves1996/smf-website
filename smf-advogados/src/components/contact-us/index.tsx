@@ -19,13 +19,10 @@ import {
   Information,
 } from "./styles";
 import { getTranslation } from "../../helpers";
-// import { ReactComponent as EmailSVG } from "../../assets/img/email.svg";
-import { ReactComponent as FaxSVG } from "../../assets/img/fax.svg";
-// import { ReactComponent as LocationSVG } from "../../assets/img/location.svg";
-// import { ReactComponent as PhoneSVG } from "../../assets/img/phone.svg";
-import EmailOutlinedIcon from "@material-ui/icons/EmailOutlined";
-import CallOutlinedIcon from "@material-ui/icons/CallOutlined";
-import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
+import EmailIcon from "@material-ui/icons/Email";
+import CallIcon from "@material-ui/icons/Call";
+import LocationOnIcon from "@material-ui/icons/LocationOn";
+import CallEndIcon from "@material-ui/icons/CallEnd";
 
 interface Props {
   language: string;
@@ -97,7 +94,7 @@ export const ContactUsComponent: React.FunctionComponent<Props> = ({
       <ContentContacts>
         <ContactsContainer>
           <ContactInfoEntry onClick={onClickContact}>
-            <CallOutlinedIcon />
+            <CallIcon />
             <ContactTitle>
               {getTranslation("contact_us_entry_number", language)}
             </ContactTitle>
@@ -105,21 +102,21 @@ export const ContactUsComponent: React.FunctionComponent<Props> = ({
             <Information>+351 925 169 997</Information>
           </ContactInfoEntry>
           <ContactInfoEntry onClick={onClickEmail}>
-            <EmailOutlinedIcon />
+            <EmailIcon />
             <ContactTitle>
               {getTranslation("contact_us_entry_email", language)}
             </ContactTitle>
             <Information>geral@smfadvogados.com</Information>
           </ContactInfoEntry>
           <ContactInfoEntry onClick={onClickFax}>
-            <FaxSVG />
+            <CallEndIcon />
             <ContactTitle>
               {getTranslation("contact_us_entry_fax", language)}
             </ContactTitle>
             <Information>+351 229 490 186</Information>
           </ContactInfoEntry>
           <ContactInfoEntry onClick={onClickLocation}>
-            <LocationOnOutlinedIcon />
+            <LocationOnIcon />
             <ContactTitle>
               {getTranslation("contact_us_entry_address", language)}
             </ContactTitle>

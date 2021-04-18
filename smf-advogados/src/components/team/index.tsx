@@ -11,8 +11,9 @@ import {
 } from "./styles";
 import { getTranslation } from "../../helpers";
 import { leaders, team, interns, administrative } from "./helpers";
-import { ReactComponent as Linkedin } from "../../assets/img/linkedin_element.svg";
-import { ReactComponent as Email } from "../../assets/img/email_element.svg";
+
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import EmailIcon from "@material-ui/icons/Email";
 
 interface Props {
   language: string;
@@ -50,12 +51,12 @@ export const TeamComponent: React.FunctionComponent<Props> = ({ language }) => {
                       <div
                         onClick={(): void => onClickLinkedin(leader.linkedin)}
                       >
-                        <Linkedin />
+                        <LinkedInIcon />
                       </div>
                     )}
                     {leader.email && (
                       <div onClick={(): void => onClickEmail(leader.email)}>
-                        <Email />
+                        <EmailIcon />
                       </div>
                     )}
                   </div>
@@ -75,12 +76,12 @@ export const TeamComponent: React.FunctionComponent<Props> = ({ language }) => {
                 <div>
                   {person.linkedin && (
                     <div onClick={(): void => onClickLinkedin(person.linkedin)}>
-                      <Linkedin />
+                      <LinkedInIcon />
                     </div>
                   )}
                   {person.email && (
                     <div onClick={(): void => onClickEmail(person.email)}>
-                      <Email />
+                      <EmailIcon />
                     </div>
                   )}
                 </div>
@@ -102,12 +103,12 @@ export const TeamComponent: React.FunctionComponent<Props> = ({ language }) => {
                 <div>
                   {person.linkedin && (
                     <div onClick={(): void => onClickLinkedin(person.linkedin)}>
-                      <Linkedin />
+                      <LinkedInIcon />
                     </div>
                   )}
                   {person.email && (
                     <div onClick={(): void => onClickEmail(person.email)}>
-                      <Email />
+                      <EmailIcon />
                     </div>
                   )}
                 </div>
@@ -129,12 +130,12 @@ export const TeamComponent: React.FunctionComponent<Props> = ({ language }) => {
                 <div>
                   {person.linkedin && (
                     <div onClick={(): void => onClickLinkedin(person.linkedin)}>
-                      <Linkedin />
+                      <LinkedInIcon />
                     </div>
                   )}
                   {person.email && (
                     <div onClick={(): void => onClickEmail(person.email)}>
-                      <Email />
+                      <EmailIcon />
                     </div>
                   )}
                 </div>
