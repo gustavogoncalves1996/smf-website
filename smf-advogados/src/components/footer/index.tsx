@@ -48,6 +48,10 @@ export const FooterComponent: React.FunctionComponent<Props> = ({
         <FooterMenu>
           <OptionWrapper>
             <Option>
+              <a href="#root">{getTranslation("home", language)}</a>
+              <ArrowRightAltIcon />
+            </Option>
+            <Option>
               <a href="#about_us">{getTranslation("about_us", language)}</a>
               <ArrowRightAltIcon />
             </Option>

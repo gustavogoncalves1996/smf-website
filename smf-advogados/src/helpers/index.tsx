@@ -39,6 +39,19 @@ const translations = [
     ],
   },
   {
+    key: "home",
+    language: [
+      {
+        language: "pt",
+        value: "Página inicial",
+      },
+      {
+        language: "en",
+        value: "Home",
+      },
+    ],
+  },
+  {
     key: "about_us",
     language: [
       {

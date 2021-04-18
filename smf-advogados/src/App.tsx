@@ -111,6 +111,10 @@ const globalColors = [
     value: "rgba(0, 0, 0, 0.8)",
   },
   {
+    key: "dark-surface-color-900",
+    value: "rgba(0, 0, 0, 0.9)",
+  },
+  {
     key: "text-primary-title-color",
     value: "rgb(51, 51, 51)",
   },

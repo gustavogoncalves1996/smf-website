@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Navigation = styled.div`
   margin-bottom: 20px;
   width: 100%;
-  height: 14rem;
+  height: 11rem;
   position: fixed;
   left: 0px;
   right: 0px;
@@ -35,7 +35,7 @@ export const Navigation = styled.div`
       padding: 0px 4rem;
 
       @media (max-width: 767px) {
-        justify-content: center;
+        justify-content: space-evenly;
         padding: 0px;
         height: auto;
         margin: 0px;
@@ -55,22 +55,58 @@ export const Navigation = styled.div`
 
         @media (max-width: 767px) {
           padding: 8px 4px;
-          margin: 0px;
         }
 
-        @media (min-width: 768px) and (max-width: 1040px) {
+        @media (max-width: 1040px) {
           margin: 0px;
         }
 
         > a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           text-decoration: none;
-          color: var(--text-secondary-color, rgb(255, 255, 255));
-          text-transform: uppercase;
-          font-size: 1.6rem;
-          font-weight: 400;
 
-          @media (max-width: 767px) {
-            font-size: 0.9rem;
+          @media (min-width: 768px) and (max-width: 1300px) {
+            flex-direction: column;
+          }
+
+          > svg {
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-right: 1rem;
+            fill: var(--text-secondary-color, rgb(255, 255, 255));
+
+            @media (min-width: 1000px) and (max-width: 1300px) {
+              margin-right: 0px;
+            }
+
+            @media (max-width: 767px) {
+              margin-right: 0px;
+            }
+
+            @media (max-width: 500px) {
+              margin: 0px 8px;
+              width: 2rem;
+              height: 2rem;
+            }
+          }
+
+          > div {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: var(--text-secondary-color, rgb(255, 255, 255));
+
+            @media (min-width: 768px) and (max-width: 1300px) {
+              flex-direction: column;
+              font-size: 1.2rem;
+            }
+
+            @media (max-width: 767px) {
+              display: none;
+            }
           }
         }
       }
