@@ -44,9 +44,6 @@ export const TeamComponent: React.FunctionComponent<Props> = ({ language }) => {
               <img src={leader.image} alt="" />
               <BioContainer>
                 <Name>{leader.name}</Name>
-                <Job>
-                  {getTranslation(`${leader.job}_${leader.genre}`, language)}
-                </Job>
                 {(leader.linkedin || leader.email) && (
                   <div>
                     {leader.linkedin && (
@@ -74,9 +71,6 @@ export const TeamComponent: React.FunctionComponent<Props> = ({ language }) => {
             <img src={person.image || defaultImage(person.genre)} alt="" />
             <BioContainer>
               <Name>{person.name}</Name>
-              <Job>
-                {getTranslation(`${person.job}_${person.genre}`, language)}
-              </Job>
               {(person.linkedin || person.email) && (
                 <div>
                   {person.linkedin && (

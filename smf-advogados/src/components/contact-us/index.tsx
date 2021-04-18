@@ -19,10 +19,13 @@ import {
   Information,
 } from "./styles";
 import { getTranslation } from "../../helpers";
-import { ReactComponent as EmailSVG } from "../../assets/img/email.svg";
+// import { ReactComponent as EmailSVG } from "../../assets/img/email.svg";
 import { ReactComponent as FaxSVG } from "../../assets/img/fax.svg";
-import { ReactComponent as LocationSVG } from "../../assets/img/location.svg";
-import { ReactComponent as PhoneSVG } from "../../assets/img/phone.svg";
+// import { ReactComponent as LocationSVG } from "../../assets/img/location.svg";
+// import { ReactComponent as PhoneSVG } from "../../assets/img/phone.svg";
+import EmailOutlinedIcon from "@material-ui/icons/EmailOutlined";
+import CallOutlinedIcon from "@material-ui/icons/CallOutlined";
+import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 
 interface Props {
   language: string;
@@ -94,7 +97,7 @@ export const ContactUsComponent: React.FunctionComponent<Props> = ({
       <ContentContacts>
         <ContactsContainer>
           <ContactInfoEntry onClick={onClickContact}>
-            <PhoneSVG />
+            <CallOutlinedIcon />
             <ContactTitle>
               {getTranslation("contact_us_entry_number", language)}
             </ContactTitle>
@@ -102,7 +105,7 @@ export const ContactUsComponent: React.FunctionComponent<Props> = ({
             <Information>+351 925 169 997</Information>
           </ContactInfoEntry>
           <ContactInfoEntry onClick={onClickEmail}>
-            <EmailSVG />
+            <EmailOutlinedIcon />
             <ContactTitle>
               {getTranslation("contact_us_entry_email", language)}
             </ContactTitle>
@@ -116,7 +119,7 @@ export const ContactUsComponent: React.FunctionComponent<Props> = ({
             <Information>+351 229 490 186</Information>
           </ContactInfoEntry>
           <ContactInfoEntry onClick={onClickLocation}>
-            <LocationSVG />
+            <LocationOnOutlinedIcon />
             <ContactTitle>
               {getTranslation("contact_us_entry_address", language)}
             </ContactTitle>

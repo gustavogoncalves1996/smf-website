@@ -7,6 +7,111 @@ export const leaders = [
       "https://www.smfadvogados.com/wp-content/uploads/2020/12/marisa_simoes_-Advogada-Rosto1.jpg",
     linkedin: "https://www.linkedin.com/in/marisa-sim%C3%B5es-a49509202/",
     email: "marisasimoes-6315p@adv.oa.pt",
+    areas: [
+      {
+        pt: "Contencioso",
+        en: "Litigation",
+      },
+      {
+        pt: "Direito Criminal e Contraordenacional",
+        en: "Criminal and Administrative Law",
+      },
+      {
+        pt: "Direito Civil – Declarativo e Executivo",
+        en: "Civil Law – Declarative and Executive",
+      },
+      {
+        pt: "Direito Comercial e Societário",
+        en: "Commercial and Corporate Law",
+      },
+      {
+        pt: "Direito da Família e Sucessões",
+        en: "Family Law and Succession",
+      },
+      {
+        pt: "Direito do Trabalho",
+        en: "Labor Law",
+      },
+      {
+        pt: "Atos notariais e Registos",
+        en: "Registration and Notary Law",
+      },
+      {
+        pt: "Imobiliário",
+        en: "Real Estate",
+      },
+      {
+        pt: "Direito Aduaneiro",
+        en: "Customs Duty",
+      },
+      {
+        pt: "Arbitragem e Mediação",
+        en: "Arbitration and Mediation",
+      },
+      {
+        pt:
+          "Contencioso de Direito Administrativo Relativo a Cidadãos Estrangeiros",
+        en: "Administrative Law Litigation Concerning Foreign Citizens",
+      },
+    ],
+    education: [
+      {
+        pt:
+          "Licenciatura em Direito pela Universidade Católica Portuguesa, Porto 1994",
+        en: "Law Degree from Portuguese Catholic University, Oporto 1994",
+      },
+    ],
+    experience: [
+      {
+        pt:
+          "Estágio Profissional o escritório de Advogados – Dr. Miguel Pereira de Abreu, no Porto – 1994/1996",
+        en:
+          "Professional Internship at the law firm – Dr. Miguel Pereira de Abreu, in Oporto – 1994/1996",
+      },
+      {
+        pt:
+          "Advogada em regime de prática individual, com escritório próprio desde 1996",
+        en: "Lawyer in individual practice, with own office since 1996",
+      },
+      {
+        pt:
+          "Advogada na sociedade Macedo & Associados – Sociedade de Advogados, no Porto nos anos de 2015 e 2016",
+        en:
+          "Lawyer at Macedo & Associados – Law Firm in Oporto in 2015 and 2016",
+      },
+      {
+        pt:
+          "Colabora com escritórios de advogados em Espanha, Brasil, Luxemburgo e África do Sul.",
+        en:
+          "Collaborated with law firms in Spain, Brazil, Luxembourg and South Africa.",
+      },
+      {
+        pt:
+          "Curso de contabilidade jurídica, da Universidade Católica do Porto, em 1994",
+        en: "Legal accounting course, Universidade Católica do Porto, 1994",
+      },
+      {
+        pt:
+          "Curso de Direito de Seguros, da Ordem dos Advogados – Distrital do Porto, no ano de 2004",
+        en: "Insurance Law Course, Bar Association – Oporto District, 2004",
+      },
+      {
+        pt:
+          "Curso de Direito de Trabalho da Ordem dos Advogados  – Distrital do Porto, no ano de 2007",
+        en:
+          "Labour Law Course of the Portuguese Bar Association – Oporto District, in 2007",
+      },
+    ],
+    languages: [
+      {
+        pt: "Inglês",
+        en: "English",
+      },
+      {
+        pt: "Espanhol",
+        en: "Spanish",
+      },
+    ],
   },
   {
     name: "Dália Morais",
@@ -16,6 +121,62 @@ export const leaders = [
       "https://www.smfadvogados.com/wp-content/uploads/2020/12/IMG_6098_Rosto1.jpg",
     email: "daliamorais-10875p@adv.oa.pt",
     linkedin: "https://www.linkedin.com/in/d%C3%A1lia-morais-a653b321/",
+    areas: [
+      {
+        pt: "Direito Bancário",
+        en: "Banking Law",
+      },
+      {
+        pt: "Direito dos Registos e do Notariado",
+        en: "Registration and Notary Law",
+      },
+      {
+        pt: "Direito do Trabalho",
+        en: "Labor Law",
+      },
+      {
+        pt: "Direito Comercial",
+        en: "Commercial Law",
+      },
+      {
+        pt: "Insolvências",
+        en: "Insolvency",
+      },
+      {
+        pt: "Processo Executivo",
+        en: "Executive Process",
+      },
+    ],
+    education: [
+      {
+        pt:
+          "Licenciatura em Direito pela Universidade Lusíada do Porto em 2002",
+        en: "Law degree from Lusiada’s University, Porto in 2002",
+      },
+    ],
+    experience: [
+      {
+        pt:
+          "Advogada em regime de prática individual , com escritório próprio desde 2005",
+        en: "Lawyer in individual practice, with own office since 2005",
+      },
+      {
+        pt: "Frequência de cursos no âmbito do Direito das contra-ordenações",
+        en: "Attendance at courses in the field of law against ordination",
+      },
+      {
+        pt:
+          "Direito dos registos e notariado e Direito do trabalho à luz do novo código de trabalho",
+        en:
+          "Registration and notary law and labour law in the light of the new labour code",
+      },
+    ],
+    languages: [
+      {
+        pt: "Inglês",
+        en: "English",
+      },
+    ],
   },
   {
     name: "Joaquim Farinha",
@@ -24,7 +185,69 @@ export const leaders = [
     image:
       "https://www.smfadvogados.com/wp-content/uploads/2020/12/JoaquimFaria-Advogado_Rosto1.jpg",
     email: "jcrf67@gmail.com",
+    // TODO: ADD INFORMATION
     linkedin: "",
+    areas: [
+      {
+        pt: "Direito do Urbanismo e Imobiliário",
+        en: "Urbanism and Real Estate Law",
+      },
+      {
+        pt: "Direito dos Registos e do Notariado",
+        en: "Registration and Notary Law",
+      },
+      {
+        pt: "Direito Civil",
+        en: "Civil Law",
+      },
+      {
+        pt: "Direito Comercial e Insolvências",
+        en: "Coomercial Law and Insolvency",
+      },
+      {
+        pt: "Direito Fiscal",
+        en: "Tax Law",
+      },
+    ],
+    education: [
+      {
+        pt:
+          "Advogado, Cédula n.º 5724P, Conselho Distrital do Porto desde 13-11-1995",
+        en: "Lawyer, Number 5724P, Oporto District Council since 13-11-1995",
+      },
+      {
+        pt:
+          "Licenciado em Direito pela Universidade Católica Portuguesa – Centro Regional do Porto",
+        en:
+          "Law Degree from Portuguese Catholic University – Oporto Regional Center",
+      },
+    ],
+    experience: [
+      {
+        pt: "Formação Complementar: Área de Seguros",
+        en: "Complementary Training: Insurance Area",
+      },
+      {
+        pt:
+          "Administrador de várias sociedades de Promoção Imobiliária e Construção Civil",
+        en:
+          "Director of several Real Estate Promotion and Construction companies",
+      },
+    ],
+    languages: [
+      {
+        pt: "Inglês",
+        en: "English",
+      },
+      {
+        pt: "Francês",
+        en: "French",
+      },
+      {
+        pt: "Castelhano",
+        en: "Spanish",
+      },
+    ],
   },
 ];
 
@@ -44,8 +267,8 @@ export const team = [
     genre: "male",
     image:
       "https://www.smfadvogados.com/wp-content/uploads/2020/12/Ilidio-Advogado_Rosto_novo-e1609350379949.jpg",
+    email: "ilidiospereira-10456p@adv.oa.pt",
     // TODO: add information
-    email: "",
     linkedin: "",
   },
   {
@@ -63,8 +286,8 @@ export const team = [
     genre: "female",
     image:
       "https://www.smfadvogados.com/wp-content/uploads/2020/12/IMG_6105_Rosto_novo-e1609350293946.jpg",
+    email: "susanadasilvadias-46943p@adv.oa.pt",
     // TODO: add information
-    email: "",
     linkedin: "",
   },
   {
@@ -73,8 +296,8 @@ export const team = [
     genre: "male",
     image:
       "https://www.smfadvogados.com/wp-content/uploads/2020/12/Jose_silva_Advogado_rosto_novo-e1609350238718.jpg",
+    email: "jfb-50368p@adv.oa.pt",
     // TODO: add information
-    email: "",
     linkedin: "",
   },
   {
@@ -83,8 +306,8 @@ export const team = [
     genre: "female",
     image:
       "https://www.smfadvogados.com/wp-content/uploads/2020/12/LaraSantos-Advogada-Rosto_novo-e1609350103483.jpg",
+    email: "lara.santos-55269p@adv.oa.pt",
     // TODO: add information
-    email: "",
     linkedin: "",
   },
   {
@@ -93,8 +316,8 @@ export const team = [
     genre: "female",
     image:
       "https://www.smfadvogados.com/wp-content/uploads/2020/12/TeresaMouraSantos-Advogada_Rosto_novo-e1609352040840.jpg",
+    email: "teresamouradossantos-59583p@adv.oa.pt",
     // TODO: add information
-    email: "",
     linkedin: "",
   },
   {
@@ -103,8 +326,8 @@ export const team = [
     genre: "female",
     image:
       "https://www.smfadvogados.com/wp-content/uploads/2020/12/AmandaSalsiarini-AdvogadaNovo-e1609352182444.jpg",
+    email: "amandasalciarini@gmail.com",
     // TODO: add information
-    email: "",
     linkedin: "",
   },
   {
@@ -114,8 +337,7 @@ export const team = [
     image:
       "https://www.smfadvogados.com/wp-content/uploads/2020/12/delfina_Rosto_novo-e1609350447190.jpg",
     linkedin: "https://www.linkedin.com/in/delfinaritamendesadvogada/",
-    // TODO: add information
-    email: "",
+    email: "delfinaritamendes-62111p@adv.oa.pt",
   },
   {
     name: "Márcio Serafim Teixeira",

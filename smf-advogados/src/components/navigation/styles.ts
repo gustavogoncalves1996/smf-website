@@ -28,6 +28,7 @@ export const Navigation = styled.div`
 
     > ul {
       display: flex;
+      justify-content: flex-end;
       width: 100%;
       height: calc(100% - 2rem);
       margin: 1rem 0px;

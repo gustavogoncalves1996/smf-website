@@ -40,7 +40,7 @@ export const NavigationComponent: React.FunctionComponent<Props> = ({
       style={{
         backgroundColor: withOpacity
           ? "transparent"
-          : "var(--dark-surface-color-500, rgba(255, 255, 255, 0.5))",
+          : "var(--dark-surface-color-800, rgba(0, 0, 0, 0.8))",
       }}
     >
       <nav>
