@@ -15,7 +15,7 @@ export const Title = styled.div`
   color: #333333;
   font-weight: bold;
   font-size: 3rem;
-  margin: 0px auto 6rem;
+  margin: 8rem auto 8rem;
   cursor: default;
 `;
 

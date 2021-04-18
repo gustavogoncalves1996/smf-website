@@ -65,6 +65,84 @@ const translations = [
     ],
   },
   {
+    key: "lawyer_male",
+    language: [
+      {
+        language: "pt",
+        value: "Advogado",
+      },
+      {
+        language: "en",
+        value: "Lawyer",
+      },
+    ],
+  },
+  {
+    key: "lawyer_female",
+    language: [
+      {
+        language: "pt",
+        value: "Advogada",
+      },
+      {
+        language: "en",
+        value: "Lawyer",
+      },
+    ],
+  },
+  {
+    key: "intern_male",
+    language: [
+      {
+        language: "pt",
+        value: "Advogado Estagiário",
+      },
+      {
+        language: "en",
+        value: "Intern Lawyer",
+      },
+    ],
+  },
+  {
+    key: "intern_female",
+    language: [
+      {
+        language: "pt",
+        value: "Advogada Estagiária",
+      },
+      {
+        language: "en",
+        value: "Intern Lawyer",
+      },
+    ],
+  },
+  {
+    key: "administrative_male",
+    language: [
+      {
+        language: "pt",
+        value: "Administrativo",
+      },
+      {
+        language: "en",
+        value: "Administrative",
+      },
+    ],
+  },
+  {
+    key: "administrative_female",
+    language: [
+      {
+        language: "pt",
+        value: "Administrativa",
+      },
+      {
+        language: "en",
+        value: "Administrative",
+      },
+    ],
+  },
+  {
     key: "practice_areas",
     language: [
       {

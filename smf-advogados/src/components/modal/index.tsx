@@ -36,7 +36,6 @@ export const ModalComponent: React.FunctionComponent<Props> = ({
 
   return (
     <Container
-      id="modalllll"
       style={{ opacity: open ? 1 : 0, visibility: open ? "visible" : "hidden" }}
     >
       <InnerContainer
