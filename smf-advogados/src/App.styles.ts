@@ -5,7 +5,7 @@ import { flexBox } from "./assets";
 export const AppContainer = styled.div`
   min-height: 100%;
   height: auto;
-  background-color: var(--background-color, rgb(247, 249, 252));
+  background-color: var(--background-color, rgb(245, 242, 235));
   padding: 0;
   margin: 0;
   list-style: none;
@@ -52,12 +52,12 @@ export const getGlobalStyle = (
 		*::-webkit-scrollbar-track {
 			-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 			border-radius: 10px;
-			background-color: var(--background-color, rgb(247, 249, 252));
+			background-color: var(--background-color, rgb(245, 242, 235));
 		}
 	  
 		*::-webkit-scrollbar {
 			width: 8px;
-			background-color: var(--background-color, rgb(247, 249, 252));
+			background-color: var(--background-color, rgb(245, 242, 235));
 		}
 	  
 		*::-webkit-scrollbar-thumb {

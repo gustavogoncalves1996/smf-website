@@ -5,7 +5,6 @@ export const Container = styled.div`
   flex-direction: column;
   padding: 8rem 0 14rem;
   position: relative;
-  background: var(--background-color, rgb(247, 249, 252));
   background-image: linear-gradient(
       var(--surface-color-700, rgba(255, 255, 255, 0.7)),
       var(--surface-color-700, rgba(255, 255, 255, 0.7))

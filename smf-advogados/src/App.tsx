@@ -60,7 +60,7 @@ const globalColors = [
   },
   {
     key: "background-color",
-    value: "rgb(247, 249, 252)",
+    value: "rgb(245, 242, 235)",
   },
   {
     key: "surface-color",
@@ -126,10 +126,6 @@ const globalColors = [
     key: "box-shadow-primary-color",
     value: "rgba(0, 0, 0, 0.15)",
   },
-  // {
-  //   key: "background-color",
-  //   value: "rgb(247,249,252)",
-  // },
 ];
 
 const App: React.FunctionComponent<{}> = () => {

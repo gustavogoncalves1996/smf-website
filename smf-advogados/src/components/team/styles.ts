@@ -18,96 +18,85 @@ export const Title = styled.div`
   cursor: default;
 `;
 
-export const TeamLeaderContainer = styled.div`
+export const TeamContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+  min-height: 60rem;
+  justify-content: space-evenly;
+`;
 
-  > div {
-    width: 33.3%;
+export const TeamElement = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 35rem;
+  min-height: 50rem;
+  padding: 2rem;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
   }
 `;
 
-export const TeamContainer = styled.div``;
+export const BioContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+  background: var(--surface-color, rgb(255, 255, 255));
+  margin: -3rem auto 0;
+  width: 80%;
+  padding: 0.5rem;
+  box-shadow: 0 1.5rem 4rem var(--box-shadow-primary-color, rgba(0, 0, 0, 0.15));
+  border-radius: 0.5rem;
 
-export const Element = styled.div`
-  figure {
-    position: relative;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    height: 30rem;
-    width: 30rem;
-    margin: 0 auto;
+  > div {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
 
-    img {
-      height: 100%;
-      width: 100%;
+    > div {
+      height: 2rem;
+      width: 2rem;
+      margin: 0px 1rem;
+      cursor: pointer;
     }
 
-    figcaption {
-      display: flex;
-      padding: 2rem;
-      color: transparent;
-      background-color: transparent;
-      position: absolute;
-      z-index: 996;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 0;
-      overflow: hidden;
-      visibility: hidden;
-      transition: all 0.3s ease-in-out;
-    }
-
-    ul {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      margin-top: auto;
-
-      li {
-        display: flex;
-        cursor: pointer;
-        padding: 10px;
-
-        > svg {
-          fill: var(--text-secondary-color, rgb(255, 255, 255));
-          width: 2.5rem;
-          height: 2.5rem;
-        }
-      }
-
-      li:last-of-type {
-        margin-top: 6px;
-      }
-    }
-
-    &:hover {
-      figcaption {
-        visibility: visible;
-        color: var(--text-secondary-color, rgb(255, 255, 255));
-        background: var(--color-primary, rgb(120, 75, 74));
-        height: 100%;
-      }
+    > div:last-of-type {
+      margin-top: 2px;
     }
   }
+`;
 
-  h4 {
-    margin: 1rem 0 0;
-    font-size: 1.8rem;
-    text-transform: none;
-    color: var(--color-primary, rgb(120, 75, 74));
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-align: center;
-  }
+export const Name = styled.div`
+  cursor: default;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: var(--text-primary-title-color, rgb(51, 51, 51));
+  font-weight: 700;
+  font-family: Oswald, sans-serif;
+  letter-spacing: 2px;
+`;
 
-  p {
-    margin: 0 0 1rem;
-    color: var(--color-primary, rgb(120, 75, 74));
-    text-align: center;
-    font-size: 1.4rem;
-  }
+export const Job = styled.div`
+  cursor: default;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 1rem auto 0;
+  color: var(--color-primary, rgb(120, 75, 74));
 `;
