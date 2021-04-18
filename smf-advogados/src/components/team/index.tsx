@@ -26,6 +26,14 @@ export const TeamComponent: React.FunctionComponent<Props> = ({ language }) => {
     window.open(linkedin, "_blank");
   };
 
+  const defaultImage = (genre: string): string => {
+    if (genre === "male") {
+      return "https://i.pinimg.com/736x/5f/40/6a/5f406ab25e8942cbe0da6485afd26b71.jpg";
+    }
+
+    return "https://cdn.nohat.cc/thumb/f/720/comvecteezy356502.jpg";
+  };
+
   return (
     <Container>
       <Title>{getTranslation("our_team", language)}</Title>
@@ -63,7 +71,7 @@ export const TeamComponent: React.FunctionComponent<Props> = ({ language }) => {
       <TeamContainer>
         {team.map((person) => (
           <TeamElement>
-            <img src={person.image} alt="" />
+            <img src={person.image || defaultImage(person.genre)} alt="" />
             <BioContainer>
               <Name>{person.name}</Name>
               <Job>
@@ -90,7 +98,7 @@ export const TeamComponent: React.FunctionComponent<Props> = ({ language }) => {
       <TeamContainer>
         {interns.map((person) => (
           <TeamElement>
-            <img src={person.image} alt="" />
+            <img src={person.image || defaultImage(person.genre)} alt="" />
             <BioContainer>
               <Name>{person.name}</Name>
               <Job>
@@ -117,7 +125,7 @@ export const TeamComponent: React.FunctionComponent<Props> = ({ language }) => {
       <TeamContainer>
         {administrative.map((person) => (
           <TeamElement>
-            <img src={person.image} alt="" />
+            <img src={person.image || defaultImage(person.genre)} alt="" />
             <BioContainer>
               <Name>{person.name}</Name>
               <Job>
