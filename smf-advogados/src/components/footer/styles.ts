@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  background: #523a39;
+  background: var(--color-primary, rgb(120, 75, 74));
   min-height: 50vh;
 `;
 
@@ -11,7 +11,7 @@ export const Footer = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  background: rgba(255, 255, 255, 0.4);
+  background: var(--surface-color-400, rgba(255, 255, 255, 0.4));
   height: calc(50vh - 16rem);
   min-height: 28rem;
 `;
@@ -68,7 +68,7 @@ export const OptionWrapper = styled.div`
 export const Option = styled.div`
   display: flex;
   align-items: center;
-  color: rgb(247, 249, 252);
+  color: var(--text-secondary-color, rgb(255, 255, 255));
   font-size: 1.6rem;
   cursor: default;
   margin: 5px 0px;
@@ -86,7 +86,7 @@ export const Option = styled.div`
     top: 50%;
     left: -17px;
     margin-top: -2px;
-    background-color: rgb(247, 249, 252);
+    background-color: var(--text-secondary-color, rgb(255, 255, 255));
   }
 
   > svg {
@@ -95,12 +95,12 @@ export const Option = styled.div`
     margin-left: 2rem;
     transition: all 0.4s;
     opacity: 0;
-    fill: rgb(247, 249, 252);
+    fill: var(--text-secondary-color, rgb(255, 255, 255));
   }
 
   > a {
     text-decoration: none;
-    color: rgb(247, 249, 252);
+    color: var(--text-secondary-color, rgb(255, 255, 255));
   }
 
   &:hover {
@@ -116,8 +116,8 @@ export const BottomFooter = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  background: rgba(255, 255, 255, 0.05);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  background: var(--surface-color-50, rgba(255, 255, 255, 0.05));
+  border-top: 1px solid var(--surface-color-500, rgba(255, 255, 255, 0.5));
   margin-top: auto;
   height: 16rem;
 `;
@@ -126,7 +126,7 @@ export const BottomFooterText = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ccc;
+  color: var(--text-secondary-color, rgb(255, 255, 255));
   font-size: 1.2rem;
   cursor: default;
   margin: 2rem 0px 0px;
@@ -143,14 +143,14 @@ export const BottomFooterIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #cccccc;
+  border: 1px solid var(--text-secondary-color, rgb(255, 255, 255));
   padding: 8px;
   border-radius: 50%;
   cursor: pointer;
   margin: 0px 1.2rem;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--surface-color-100, rgba(255, 255, 255, 0.1));
   }
 
   svg {

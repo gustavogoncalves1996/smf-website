@@ -9,9 +9,9 @@ export const Title = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 3px solid #784b4a;
+  border-bottom: 3px solid var(--color-primary, rgb(120, 75, 74));
   padding: 1rem 1.5rem;
-  color: #333333;
+  color: var(--text-primary-title-color, rgb(51, 51, 51));
   font-weight: bold;
   font-size: 3rem;
   margin: 0px auto 6rem;
@@ -73,7 +73,7 @@ export const Element = styled.div`
         padding: 10px;
 
         > svg {
-          fill: #fff;
+          fill: var(--text-secondary-color, rgb(255, 255, 255));
           width: 2.5rem;
           height: 2.5rem;
         }
@@ -87,8 +87,8 @@ export const Element = styled.div`
     &:hover {
       figcaption {
         visibility: visible;
-        color: #fff;
-        background: rgba(120, 75, 74, 0.6);
+        color: var(--text-secondary-color, rgb(255, 255, 255));
+        background: var(--color-primary, rgb(120, 75, 74));
         height: 100%;
       }
     }
@@ -98,7 +98,7 @@ export const Element = styled.div`
     margin: 1rem 0 0;
     font-size: 1.8rem;
     text-transform: none;
-    color: #784b4a;
+    color: var(--color-primary, rgb(120, 75, 74));
     font-weight: 600;
     letter-spacing: 1px;
     text-align: center;
@@ -106,7 +106,7 @@ export const Element = styled.div`
 
   p {
     margin: 0 0 1rem;
-    color: rgba(120, 75, 74, 0.8);
+    color: var(--color-primary, rgb(120, 75, 74));
     text-align: center;
     font-size: 1.4rem;
   }

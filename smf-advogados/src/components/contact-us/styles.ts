@@ -5,10 +5,10 @@ export const Container = styled.div`
   flex-direction: column;
   padding: 8rem 0 14rem;
   position: relative;
-  background: rgb(247, 249, 252);
+  background: var(--background-color, rgb(247, 249, 252));
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.7)
+      var(--surface-color-700, rgba(255, 255, 255, 0.7)),
+      var(--surface-color-700, rgba(255, 255, 255, 0.7))
     ),
     url(https://dl.wotor.net/_com/zenoimpex.com/images/demo/666.jpg);
 
@@ -21,9 +21,9 @@ export const Title = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 3px solid #784b4a;
+  border-bottom: 3px solid var(--color-primary, rgb(120, 75, 74));
   padding: 1rem 1.5rem;
-  color: #333333;
+  color: var(--text-primary-title-color, rgb(51, 51, 51));
   font-weight: bold;
   font-size: 3rem;
   margin: 0px auto 6rem;
@@ -38,8 +38,8 @@ export const Content = styled.div`
   max-width: 80%;
   margin: 0px auto 6rem;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 20%);
-  background: white;
+  box-shadow: 0 1.5rem 4rem var(--box-shadow-primary-color, rgba(0, 0, 0, 0.15));
+  background: var(--surface-color, rgb(255, 255, 255));
   min-height: 50rem;
 
   @media (max-width: 767px) {
@@ -72,8 +72,8 @@ export const ContactInfoEntry = styled.div`
   align-items: center;
   height: 30rem;
   width: 23rem;
-  background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%);
+  background-color: var(--surface-color-800, rgba(255, 255, 255, 0.8));
+  box-shadow: 0 1.5rem 4rem var(--box-shadow-primary-color, rgba(0, 0, 0, 0.15));
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
@@ -96,7 +96,7 @@ export const ContactInfoEntry = styled.div`
   svg {
     height: 6rem;
     width: 4rem;
-    fill: rgb(120 75 74 / 80%);
+    fill: var(--color-primary-800, rgba(120, 75, 74, 0.8));
     margin-bottom: 1.5rem;
   }
 `;
@@ -105,7 +105,7 @@ export const ContactTitle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #777;
+  color: var(--text-primary-text-color, rgb(102, 102, 102));
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -115,7 +115,7 @@ export const ContactTitle = styled.div`
 export const Information = styled.div`
   display: flex;
   font-weight: 400;
-  color: #777;
+  color: var(--text-primary-text-color, rgb(102, 102, 102));
   font-size: 1.2rem;
   margin: 4px 0px;
 `;
@@ -148,7 +148,7 @@ export const Form = styled.div`
 
 export const FormTitle = styled.div`
   font-size: 4rem;
-  color: #333333;
+  color: var(--text-primary-title-color, rgb(51, 51, 51));
 
   @media (max-width: 767px) {
     font-size: 3rem;
@@ -171,7 +171,7 @@ export const SimpleInput = styled.div`
   input {
     padding: 0px 1rem;
     border: none;
-    border-bottom: 1px solid rgba(120, 75, 74, 0.5);
+    border-bottom: 1px solid var(--color-primary, rgb(120, 75, 74));
     background-color: transparent;
     font-size: 14px;
     line-height: 25px;
@@ -188,7 +188,7 @@ export const SimpleInput = styled.div`
     top: 0;
     left: 0;
     right: 0;
-    color: #333333;
+    color: var(--text-primary-title-color, rgb(51, 51, 51));
     font-size: 14px;
     width: 100%;
     transition: 0.2s ease-in-out;
@@ -196,11 +196,11 @@ export const SimpleInput = styled.div`
   }
 
   input:focus {
-    border-bottom: 1px solid #784b4a;
+    border-bottom: 1px solid var(--color-primary, rgb(120, 75, 74));
   }
 
   input:focus + label {
-    color: #784b4a;
+    color: var(--color-primary, rgb(120, 75, 74));
     font-size: 1rem;
     top: -2rem;
     pointer-events: none;
@@ -227,7 +227,7 @@ export const SimpleTextArea = styled.div`
   textarea {
     padding: 0px 1rem;
     border: none;
-    border-bottom: 1px solid rgba(120, 75, 74, 0.5);
+    border-bottom: 1px solid var(--color-primary, rgb(120, 75, 74));
     background-color: transparent;
     font-size: 14px;
     line-height: 25px;
@@ -245,7 +245,7 @@ export const SimpleTextArea = styled.div`
     top: 0;
     left: 0;
     right: 0;
-    color: #333333;
+    color: var(--text-primary-title-color, rgb(51, 51, 51));
     font-size: 14px;
     width: 100%;
     transition: 0.2s ease-in-out;
@@ -253,11 +253,11 @@ export const SimpleTextArea = styled.div`
   }
 
   textarea:focus {
-    border-bottom: 1px solid #784b4a;
+    border-bottom: 1px solid var(--color-primary, rgb(120, 75, 74));
   }
 
   textarea:focus + label {
-    color: #784b4a;
+    color: var(--color-primary, rgb(120, 75, 74));
     font-size: 1rem;
     top: -2rem;
     pointer-events: none;
@@ -302,28 +302,26 @@ export const Send = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 28rem;
+  width: 23rem;
   text-align: center;
   text-transform: uppercase;
   font-size: 1.4rem;
-  color: white;
-  background-color: #784b4a;
-  border: 2px solid #784b4a;
+  color: var(--text-secondary-color, rgb(255, 255, 255));
+  background-color: var(--color-primary, rgb(120, 75, 74));
+  border: 2px solid var(--color-primary, rgb(120, 75, 74));
   cursor: pointer;
   transition: all 0.2s;
-  padding: 2rem 1rem;
-  border-radius: 3px;
+  padding: 1.4rem 1rem;
+  border-radius: 10px;
   letter-spacing: 1.3px;
 
   &:hover {
-    background-color: white;
-    color: #784b4a;
-    box-shadow: 0 1rem 2rem rgba(#fff, 0.15);
+    background-color: transparent;
+    color: var(--color-primary, rgb(120, 75, 74));
     transform: translateY(-2px);
   }
 
   &:active {
-    box-shadow: 0 0.5rem 1rem rgba(#fff, 0.15);
     transform: translateY(0);
   }
 

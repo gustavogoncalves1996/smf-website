@@ -63,17 +63,13 @@ export const Navigation = styled.div`
 
         > a {
           text-decoration: none;
-          color: white;
+          color: var(--text-secondary-color, rgb(255, 255, 255));
           text-transform: uppercase;
           font-size: 1.6rem;
           font-weight: 400;
 
           @media (max-width: 767px) {
             font-size: 0.9rem;
-          }
-
-          &:hover {
-            color: #9c7978;
           }
         }
       }
@@ -113,7 +109,7 @@ export const LanguageOption = styled.div`
 
   > div {
     font-size: 1.4rem;
-    color: white;
+    color: var(--text-secondary-color, rgb(255, 255, 255));
     font-weight: 400;
 
     @media (max-width: 767px) {

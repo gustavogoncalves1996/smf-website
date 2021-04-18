@@ -38,7 +38,9 @@ export const NavigationComponent: React.FunctionComponent<Props> = ({
     <Navigation
       id="navigation_bar"
       style={{
-        backgroundColor: withOpacity ? "transparent" : "rgba(0, 0, 0, 0.55)",
+        backgroundColor: withOpacity
+          ? "transparent"
+          : "var(--dark-surface-color-500, rgba(255, 255, 255, 0.5))",
       }}
     >
       <nav>

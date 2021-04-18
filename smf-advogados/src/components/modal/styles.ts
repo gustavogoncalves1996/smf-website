@@ -9,7 +9,7 @@ export const Container = styled.div`
   height: 100vh;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--dark-surface-color-800, rgba(255, 255, 255, 0.8));
   z-index: 1001;
   overflow: hiden;
   transition: 0.64s ease-in-out;
@@ -21,7 +21,7 @@ export const InnerContainer = styled.div`
   align-items: center;
   width: 80%;
   height: 80%;
-  background-color: #fff;
+  background-color: var(--surface-color, rgb(255, 255, 255));
   transform: rotate(32deg);
   transition: 0.64s ease-in-out;
 
@@ -40,9 +40,9 @@ export const Close = styled.a`
   font-size: 1.2rem;
   font-weight: 300;
   border-radius: 100%;
-  background-color: #784b4a;
+  background-color: var(--color-primary, rgb(120, 75, 74));
   z-index: 4;
-  color: #fff;
+  color: var(--text-secondary-color, rgb(255, 255, 255));
   line-height: 3rem;
   text-align: center;
   cursor: pointer;
@@ -97,7 +97,7 @@ export const TextContainer = styled.div`
 `;
 
 export const Title = styled.div`
-  color: #784b4a;
+  color: var(--color-primary, rgb(120, 75, 74));
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -117,7 +117,7 @@ export const Description = styled.div`
   white-space: pre-line;
   text-align: justify;
   font-size: 1.2rem;
-  color: #686868;
+  color: var(--text-primary-text-color, rgb(102, 102, 102));
   line-height: 2rem;
   margin-bottom: 8px;
 `;

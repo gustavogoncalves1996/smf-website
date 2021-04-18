@@ -20,9 +20,9 @@ export const Title = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 3px solid #784b4a;
+  border-bottom: 3px solid var(--color-primary, rgb(120, 75, 74));
   padding: 1rem 1.5rem;
-  color: #333333;
+  color: var(--text-primary-title-color, rgb(51, 51, 51));
   font-weight: bold;
   font-size: 3rem;
   margin: 0px auto 6rem;
@@ -46,8 +46,8 @@ export const Content = styled.div`
 export const Story = styled.div`
   width: 75%;
   margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgb(0 0 0 / 10%);
-  background-color: white;
+  box-shadow: 0 3rem 6rem var(--box-shadow-primary-color, rgba(0, 0, 0, 0.15));
+  background-color: var(--surface-color, rgb(255, 255, 255));
   border-radius: 3px;
   padding: 4rem;
   padding-left: 6rem;
@@ -112,23 +112,23 @@ export const MoreContainer = styled.div`
 export const ReadMore = styled.div`
   margin-left: auto;
   font-size: 1.6rem;
-  color: #784b4a;
+  color: var(--color-primary, rgb(120, 75, 74));
   display: inline-block;
   text-decoration: none;
-  border-bottom: 1px solid #784b4a;
+  border-bottom: 1px solid var(--color-primary, rgb(120, 75, 74));
   padding: 3px;
   transition: all 0.2s;
   cursor: pointer;
 
   &:hover {
-    background-color: #784b4a;
-    color: white;
-    box-shadow: 0 1rem 2rem rgba(#fff, 0.15);
+    background-color: var(--color-primary, rgb(120, 75, 74));
+    color: var(--text-secondary-color, rgb(255, 255, 255));
+    box-shadow: 0 1rem 2rem var(--surface-color-100, rgba(255, 255, 255, 0.1));
     transform: translateY(-2px);
   }
 
   &:active {
-    box-shadow: 0 0.5rem 1rem rgba(#fff, 0.15);
+    box-shadow: 0 0.5rem 1rem var(--surface-color-100, rgba(255, 255, 255, 0.1));
     transform: translateY(0);
   }
 `;
@@ -140,5 +140,5 @@ export const BackgroundWrapper = styled.div`
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--surface-color-300, rgba(255, 255, 255, 0.3));
 `;

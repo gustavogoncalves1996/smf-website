@@ -14,9 +14,9 @@ export const Title = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 3px solid #784b4a;
+  border-bottom: 3px solid var(--color-primary, rgb(120, 75, 74));
   padding: 1rem 1.5rem;
-  color: #333333;
+  color: var(--text-primary-title-color, rgb(51, 51, 51));
   font-weight: bold;
   font-size: 3rem;
   margin: 0px auto 4rem;
@@ -58,7 +58,7 @@ export const Paragraph = styled.div`
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 3rem;
-  color: #777;
+  color: var(--text-primary-text-color, rgb(102, 102, 102));
   text-align: justify;
   margin-bottom: 1.6rem;
 `;

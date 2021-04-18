@@ -10,9 +10,9 @@ export const Title = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 3px solid #784b4a;
+  border-bottom: 3px solid var(--color-primary, rgb(120, 75, 74));
   padding: 1rem 1.5rem;
-  color: #333333;
+  color: var(--text-primary-title-color, rgb(51, 51, 51));
   font-weight: bold;
   font-size: 3rem;
   margin: 8rem auto 8rem;
@@ -35,7 +35,7 @@ export const ActivitiesArea = styled.div`
 
 export const Activity = styled.div`
   display: flex;
-  background: rgba(0, 0, 0, 0.25);
+  background: var(--dark-surface-color-250, rgba(255, 255, 255, 0.25));
   min-height: 50rem;
   width: 33.3%;
   position: relative;
@@ -73,7 +73,7 @@ export const ActivityText = styled.div`
   font-size: 2rem;
   font-weight: 400;
   line-height: 28px;
-  color: #fff;
+  color: var(--text-secondary-color, rgb(255, 255, 255));
   position: absolute;
   bottom: 3rem;
   left: 3rem;

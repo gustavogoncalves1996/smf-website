@@ -5,7 +5,7 @@ import { flexBox } from "./assets";
 export const AppContainer = styled.div`
   min-height: 100%;
   height: auto;
-  background-color: rgb(247, 249, 252);
+  background-color: var(--background-color, rgb(247, 249, 252));
   padding: 0;
   margin: 0;
   list-style: none;
@@ -13,7 +13,15 @@ export const AppContainer = styled.div`
   ${flexBox}
 `;
 
-export const getGlobalStyle = (isModalOpen: boolean) => createGlobalStyle`
+export interface Color {
+  key: string;
+  value: string;
+}
+
+export const getGlobalStyle = (
+  isModalOpen: boolean,
+  colors: Color[]
+) => createGlobalStyle`
 	*,
 	*::after,
 	*::before {
@@ -44,19 +52,21 @@ export const getGlobalStyle = (isModalOpen: boolean) => createGlobalStyle`
 		*::-webkit-scrollbar-track {
 			-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 			border-radius: 10px;
-			background-color: #f5f5f5;
-		  }
+			background-color: var(--background-color, rgb(247, 249, 252));
+		}
 	  
-		  *::-webkit-scrollbar {
+		*::-webkit-scrollbar {
 			width: 8px;
-			background-color: #f5f5f5;
-		  }
+			background-color: var(--background-color, rgb(247, 249, 252));
+		}
 	  
-		  *::-webkit-scrollbar-thumb {
+		*::-webkit-scrollbar-thumb {
 			border-radius: 10px;
 			-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-			background-color: rgb(120 75 74 / 70%);
-		  }
+			background-color: var(--color-primary-700, rgba(120, 75, 74, 0.7));
+		}
+
+		${colors.map(({ key, value }) => `--${key}: ${value};`)}
 	}
 
 	body {
@@ -81,6 +91,5 @@ export const getGlobalStyle = (isModalOpen: boolean) => createGlobalStyle`
 		font-family: "Lato", sans-serif;
 		font-weight: 400;
 		line-height: 1.7;
-		color: #777;
   	}
 `;

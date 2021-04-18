@@ -61,7 +61,13 @@ export const ContactUsComponent: React.FunctionComponent<Props> = ({
   };
 
   const additionalStyle = (value: string) =>
-    value === "" ? {} : { color: "#784b4a", fontSize: "1rem", top: "-2rem" };
+    value === ""
+      ? {}
+      : {
+          color: "var(--color-primary, rgb(120, 75, 74))",
+          fontSize: "1rem",
+          top: "-2rem",
+        };
 
   const onClickContact = (): void => {
     window.open("tel:229481864", "_blank");
